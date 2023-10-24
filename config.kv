@@ -1,0 +1,36 @@
+MDBoxLayout:
+    orientation: "vertical"
+    size_hint: (0.8, 0.9)
+    pos_hint: {"center_x": 0.5, "center_y": 0.5}
+    MDBoxLayout:
+        orientation: "horizontal"
+        size_hint: (None, 0.1)
+        MDLabel:
+            text: "Repetir"
+        MDSwitch:
+            id: switchrepetir
+            active: app.botaorepetir()
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+    MDBoxLayout:
+        orientation: "horizontal"
+        size_hint: (1, 0.3)
+        MDTextField:
+            id: pathvideos
+            hint_text: "Caminho para os videos"
+            text: app.dir_path_videos
+    MDBoxLayout:
+        orientation: "horizontal"
+        size_hint: (1, 0.3)
+        MDTextField:
+            id: pathampc
+            hint_text: "Caminho para o MPC-HC"
+            text: app.dir_exe_path
+    MDBoxLayout:
+        size_hint: (0.8, 0.2)
+        spacing: "10dp"
+        MDRaisedButton:
+            text: 'Salvar Configurações'
+            on_release: app.saveconfigs()
+        MDRaisedButton:
+            text: 'Iniciar'
+            on_release: app.play()

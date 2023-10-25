@@ -1,5 +1,7 @@
 import json
 from pathlib import Path
+import logging
+logging.raiseExceptions = False
 
 dir_exe_path = r"C:\Program Files (x86)\K-Lite Codec Pack\MPC-HC64\mpc-hc64.exe"
 dir_path_videos = r"C:\Users\Universal\Downloads\TH"
@@ -23,6 +25,7 @@ class Configs:
             
     # Grava as configurações no arquivo JSON
     def save_configs(dataconfigs) -> None:
+        dataconfigs["dir_path_videos"] = dataconfigs["dir_path_videos"].replace("\\", "/")
         with open(dirconfigs, "w") as file:
             json.dump(dataconfigs, file, indent=4)
 

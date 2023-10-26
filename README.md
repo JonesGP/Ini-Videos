@@ -8,4 +8,4 @@ Este programa foi feito com python como linguagem, kivy para interface, pyautogu
 Com ele você pode indicar onde esta o executável do player, onde esta pasta dos vídeos, e uma opçao para repetir ou não os vídeos ja que em alguns computadores essa opção não fica salva automaticamente no player.
 
 # Download do instalador
-<a href="https://drive.google.com/file/d/1XKKSWVhoDPW--k4io9GsiAIfB6QfbKhC/view?usp=drivesdk">Donwload v0.0.1</a>
+<a href="https://drive.google.com/file/d/1XWIY9bMdDyZCenPaEUp1Nznc-AVDNU4-/view?usp=drivesdk">Donwload v0.0.1</a>
